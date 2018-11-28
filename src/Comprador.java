@@ -10,5 +10,20 @@ public class Comprador extends Usuario_Participante {
        this.misPujas = new ArrayList<Puja>();
     }
 
+    public void mostrarMisPujas()
+    {
+        for (Puja puja:this.misPujas) {
+            puja.mostrarInformacionDePuja();
+        }
+    }
 
+    public boolean agregarPuja(String contraseña, Puja puja)
+    {
+        if(this.validarContraseña(contraseña))
+        {
+            this.misPujas.add(puja);
+            return true;
+        }
+        return false;//contraseña erronea.
+    }
 }

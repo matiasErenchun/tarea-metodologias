@@ -9,9 +9,43 @@ public class Vendedor extends Usuario_Participante
         this.misProductos = new ArrayList<Producto>();
     }
 
-    public void agregarProducto(Producto producto )
+    public boolean agregarProducto(String contraseña,Producto producto )
     {
-        this.misProductos.add(producto);
+        if(this.validarContraseña(contraseña))
+        {
+            this.misProductos.add(producto);
+            return true;
+
+        }
+        return false;//contraseña erronea no se agrega el producto
+    }
+
+    public void mostrarMisProductos()
+    {
+        for (Producto producto:this.misProductos)
+        {
+            producto.mostrarInformacionProducto();
+        }
+    }
+
+    // cuando se use el metodo primero validar si existe el producto aun asi  se asumio que no se valida y se creo un caso de error .
+    public Producto buscarProducto(Integer idProducto)
+    {
+        int i=0;
+        Producto contenedorProducto = new Producto(00,"error","error",00);
+        boolean buscar = true;
+        while(buscar)
+        {
+            contenedorProducto = this.misProductos.get(i);
+            if(contenedorProducto.getIdProducto().equals(idProducto))
+            {
+                buscar=false;
+
+            }
+            i++;
+        }
+        return contenedorProducto;
+
     }
 
    /* public Producto eliminarProducto()

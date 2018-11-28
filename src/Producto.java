@@ -5,21 +5,30 @@ public class Producto
     private Integer idVendedor;
     private String nombre;
     private String descripcion;
-    private Integer id;
+    private Integer idProducto;
     private ArrayList<Puja> pujasPorElProducto;
+    private Boolean estado;
     //lista de imagenes.
 
 
-    public Producto(String nombre, String descripcion, Integer id) {
+    public Producto(Integer idVendedor, String nombre, String descripcion, Integer id)
+    {
+        this.idVendedor = idVendedor;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.id = id;
+        this.idProducto = id;
         this.pujasPorElProducto = new ArrayList<Puja>();
+        this.estado = false;
+    }
+
+    public Integer getIdVendedor()
+    {
+        return this.idVendedor;
     }
 
     public String getNombre()
     {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre)
@@ -29,7 +38,7 @@ public class Producto
 
     public String getDescripcion()
     {
-        return descripcion;
+        return this.descripcion;
     }
 
     public void setDescripcion(String descripcion)
@@ -37,13 +46,38 @@ public class Producto
         this.descripcion = descripcion;
     }
 
-    public Integer getId()
+    public Integer getIdProducto()
     {
-        return id;
+        return this.idProducto;
     }
 
-    public void setId(Integer id)
+    public void mostrarPujas()
     {
-        this.id = id;
+        for (Puja puja: this.pujasPorElProducto)
+        {
+            puja.mostrarInformacionDePuja();
+        }
     }
+
+    public void agregarPuja(Puja puja)
+    {
+        this.pujasPorElProducto.add(puja);
+    }
+
+    public void mostrarInformacionProducto()
+    {
+        System.out.println("nombre del producto: "+this.nombre);
+        System.out.println("descripcion del producto: "+this.descripcion);
+        System.out.println("ID del producto: "+this.idProducto);
+        System.out.println("ID del vendedor: "+this.idVendedor);
+        System.out.println("cantidad de pujas :"+this.cantidadDePujas());
+
+    }
+
+    public int cantidadDePujas()
+    {
+        return this.pujasPorElProducto.size();
+    }
+
+
 }
