@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8eb1b6a-ccf3-41ef-9fb3-21ef902c0726" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comprador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comprador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Puja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Puja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sistema.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="10" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3244" />
+          <entry key="java" value="3387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3244" />
+          <entry key="JAVA" value="3387" />
         </counts>
       </usages-collector>
     </session>
@@ -71,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vendedor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2">
@@ -82,6 +78,15 @@
                 <element signature="method#mostrarMisProductos#0;class#Vendedor#0" />
                 <element signature="method#buscarProducto#0;class#Vendedor#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sistema.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -159,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/Vendedor.java" />
         <option value="$PROJECT_DIR$/src/Puja.java" />
         <option value="$PROJECT_DIR$/src/Producto.java" />
+        <option value="$PROJECT_DIR$/src/Sistema.java" />
       </list>
     </option>
   </component>
@@ -201,7 +207,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543422353479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543423033668" />
     <property name="last_opened_file_path" value="D:/Repo local/pruebas" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -252,12 +258,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543346649439</updated>
       <workItem from="1543346666481" duration="4139000" />
-      <workItem from="1543419882587" duration="3109000" />
+      <workItem from="1543419882587" duration="3863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11465000" />
+    <option name="totallyTimeSpent" value="12219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,6 +383,13 @@
             <element signature="method#mostrarMisProductos#0;class#Vendedor#0" />
             <element signature="method#buscarProducto#0;class#Vendedor#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sistema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
